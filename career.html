@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body name="body">
+ <iframe src="title.html" style="border:none" width="100%" height="65px" scrolling="no"></iframe>  
+ <div class="topnav" id="myDIV">
+  <a class="btn active" href="index.html" >Home</a>
+  <a class="btn" href="sports.html" >Sports</a>
+  <a class="btn" href="career.html" >Career</a>
+  <a class="btn" href="yoga.html" >Yoga</a>
+  <a class="btn" href="tech.html" >Tech</a>
+  <a class="btn" href="interview.html" >Interviews</a>
+  <a class="btn" href="achievements.html" >Achievements</a>
+  <a class="btn" href="route.html" >College Route Map</a>
+  <a class="btn" href="contact.html" >Contact Us</a>
+  <a class="btn" href="signup.html" style="float: right;">Signup</a>
+</div>
+<div class=div1>
+<p class="n">&copy;</p> <p class="s">owned by srinu, sai ganesh, praveen</p>                     
+<p>contact:9951748659</p>
+<p>Designed by Srinu,sai,praveen</p></div>
+</body>
+<style type="text/css">
+  .p{
+    background-color: rgba(0,0,0,0.4);
+    width: 450px;
+    height: 600px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-radius: 100px 20px 100px 20px;
+    padding-bottom: 140px;
+  }
+  .div1{
+  background-color: DimGray;
+  border-radius: 9px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 7px;
+  position: fixed;
+}
+p{
+    font-size: 25px;
+    display: inline;
+    padding-left: 150px;}
+    .s{
+    font-size: 25px;
+    display: inline;
+    padding-left: 0px;
+  }
+  .n{
+    font-size: 35px;
+    display: inline;
+    padding-left: 30px;
+  }
+  body{
+    font-family: Arial, Helvetica;
+        background-image: radial-gradient(orange,white);
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.i1{
+  margin:20px;
+  margin-top: 50px;
+}
+.p{
+
+}
+</style>
+<script>
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+</html>
